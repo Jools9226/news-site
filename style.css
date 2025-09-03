@@ -1,0 +1,215 @@
+html {
+  background: #fff;
+  color: #333;
+}
+
+body, html {
+  height: 100%
+
+}
+
+header {
+  background: #222;
+  color: #fff;
+  padding: 1rem;
+  display: flex;
+  align-items: center;      /* vertikal centrering */
+  justify-content: space-between; /* sprider ut element */
+
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+}
+
+.logo-container img {
+  height: 150px;
+  width: auto;
+  border: none; 
+  
+}
+
+.header h1 {
+  margin: 0;   
+  flex: auto;             
+  align-items: center;         
+
+}
+
+nav {
+  flex: 2;                  /* ger mer utrymme till menyn */
+
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;  /* centrerar menyn i nav */
+
+}
+
+.grid-parent {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto;
+  gap: 1rem;
+
+}
+
+.grid-item {
+  background: grey;
+  position: relative; /* krävs för att overlay ska ligga på rätt ställe */
+  overflow: hidden; /* döljer överskjutande delar av bilden */
+  border-radius: 8px;
+
+}
+
+.big-grid-item {
+  grid-column: 1 / -1;
+  height: 400px;
+
+}
+
+.medium-grid-item {
+  height: 200px;
+
+}
+
+.grid-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* beskär snyggt */
+  display: block;
+
+}
+
+.overlay {
+  position: absolute; 
+  bottom: 0; /* placerar texten längst ned */
+  left: 0;
+  width: 100%;
+  padding: 1rem;
+  background: rgba(0,0,0,0.5); /* mörk bakgrund för läsbarhet */
+  color: #fff;
+
+}
+
+.overlay h2, 
+.overlay h3, 
+.overlay p {
+  margin: 0;
+
+}
+
+.styled-button {
+  font-size: 20px;
+  padding: 5px;
+  color:#539c08;
+  background:#f2f2f2;
+  border: 2px solid #539c08;
+
+}
+
+.flex-parent {
+  border: 1px solid;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+
+}
+
+.flex-child {
+  margin: 5px;
+  padding: 5px;
+  border: 2px solid;
+  border-radius: 2px;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+}
+
+.flex-child.one {
+  flex-direction: column;
+
+}
+
+.flex-child.two {
+  flex-direction: column;
+
+}
+
+.flex-child.three {
+  flex-direction: column;
+
+}
+
+
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+
+}
+
+.topnav a:hover {
+  background-color: orangered;
+  color: orange;
+
+}
+
+.topnav a.active {
+  background-color: orangered;
+  color: white;
+
+}
+
+h1 {
+  margin: 20px;
+  font-size: 30px;
+}
+
+img {
+  margin: 10px;
+  width: 50px;
+  border: 1px solid;
+
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 60px;
+  display: inline;
+}
+
+li {
+  float: center;
+}
+
+.other-news {
+  display: flex;
+  justify-content: center;
+
+}
+  
