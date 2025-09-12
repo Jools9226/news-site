@@ -1,12 +1,15 @@
 html {
   background: #fff;
   color: #333;
+  font-family:'Times New Roman', Times, serif;
+
 }
 
 body, html {
   height: 100%
 
 }
+
 
 header {
   background: #222;
@@ -32,10 +35,21 @@ header {
   
 }
 
-.header h1 {
-  margin: 0;   
-  flex: auto;             
-  align-items: center;         
+.welcome >article > h1 {
+  display: block;
+  margin: 10px;
+  font-size: 30px;   
+  padding: 1rem;           
+  text-align: center;  
+
+}
+
+.welcome > article > p {
+  display: block;
+  text-align: center;
+  margin: 5px;
+  padding: 1rem;
+  font-size: large;
 
 }
 
@@ -116,41 +130,10 @@ nav ul {
 
 }
 
-.flex-parent {
+.flex-container {
   border: 1px solid;
-  height: 500px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-
-}
-
-.flex-child {
-  margin: 5px;
-  padding: 5px;
-  border: 2px solid;
-  border-radius: 2px;
-  width: 300px;
   height: 300px;
   display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-
-}
-
-.flex-child.one {
-  flex-direction: column;
-
-}
-
-.flex-child.two {
-  flex-direction: column;
-
-}
-
-.flex-child.three {
-  flex-direction: column;
 
 }
 
@@ -183,11 +166,6 @@ nav ul {
 
 }
 
-h1 {
-  margin: 20px;
-  font-size: 30px;
-}
-
 img {
   margin: 10px;
   width: 50px;
@@ -207,9 +185,12 @@ li {
   float: center;
 }
 
-.other-news {
-  display: flex;
-  justify-content: center;
-
+footer {
+  display: block;
+  text-align: center;
+  padding: 10px; 
+  background-color: #333;
+  color: white;
+  
 }
   

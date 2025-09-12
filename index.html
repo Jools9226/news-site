@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Change the title below -->
     <title>Honey News</title>
     <link rel="stylesheet" href="./style.css" />
@@ -11,8 +12,8 @@
     <header>
       <!-- Some kind of logo and navbar -->
       <div class="logo-container">
+      <a title="Back to home page"></a>
       <img src="./images/Honey-logo.png" alt="logo"/>
-       <h1>Honey News Room</h1>
       </div>
       <div class="topnav">
         <a class="active" href="#home">Home</a>
@@ -21,42 +22,53 @@
         <a href="#about">About us</a>
     </div>
     </header>
+    <main>
+    <section class="welcome">
+    <article>
+      <h1>Welcome to Honey Newsroom</h1>
+      <p>The latest news about honey bees and bee keeping around the world. 
+        Here you will find resources on everything bees and honey.</p>
+    </article></section>
+       <!--Huvudnyhet-->
     <section class="grid-parent">
       <div class="grid-item big-grid-item">
         <img src="images/bees.jpg" alt="Huvudnyhet">
         <div class="overlay">
-          <h2>Rubrik</h2>
-          <p>Introduktion till nyheten</p>
-          <a href="#">Läs mer</a>
+          <h2>Bee parasite spreading</h2>
+          <p>A new bee parasite could affect billions...</p>
+          <button class="styled-button">
+          <a href="https://www.independent.co.uk/news/science/parasite-honeybee-tropi-varroa-destructor-b2823760.html">Read</a></button>
       </div>
       </div>
       <div class="grid-item medium-grid-item">
         <img src="images/biking.jpg" alt="Nyhet 1">
         <div class="overlay">
-          <h3>Nyhet 1</h3>
-          <p>Introduktion...</p>
-          <a href="#">Läs mer</a>
+          <h3>"Super food" saves honey bees</h3>
+          <p>Scientists have developed a honeybee "superfood" that could...</p>
+          <button class="styled-button">
+          <a href="https://www.bbc.com/news/articles/c776kynn771o">Read</a></button>
         </div>
       </div>
       <div class="grid-item medium-grid-item">
         <img src="images/flowers.jpg" alt="Nyhet 2">
         <div class="overlay">
-          <h3>Nyhet 2</h3>
-          <p>Introduktion...</p>
-          <a href="#">Läs mer</a>
+          <h3>Wild honey bees</h3>
+          <p>You can help researchers find wild honey bees...</p>
+          <button class="styled-button">
+          <a href="https://www.natursidan.se/nyheter/hjalp-forskare-hitta-vilda-samhallen-av-honungsbin/">Read</a></button>
         </div>
       </div>
       <div class="grid-item medium-grid-item">
         <img src="images/honey.jpg" alt="Nyhet 3">
         <div class="overlay">
-        <h3>Nyhet 3</h3>
-        <p>Introduktion...</p>
-        <a href="#">Läs mer</a>
+        <h3>Imported honey proved to be fake</h3>
+        <p>Bee keepers are using dna technology to test honey...</p>
+        <button class="styled-button">
+        <a href="https://www.svt.se/nyheter/inrikes/bluffen-all-importerad-honung-oakta-visar-nya-tester">Read</a></button>
         </div>
       </div>
       </section>
-    <main>
-      <!--Huvudnyhet-->
+      </main>
       <div>
         <article class="featured">
         <h2>Stor rubrik för huvudnyhet</h2>
@@ -67,30 +79,17 @@
       <button class="styled-button">Läs mer</button>
     </div>
       </div>
-    <section class="flex-parent">
-      <!-- Fler stora nyheter -->
-      <div class="flex-child one">
+    <section class="flex-container">
         <img src="./images/flowers.jpg" alt="blommor"/>
         <h2>Detta är en rubrik</h2>
         <p>Detta är en text</p></div>
-        <a href="#">Läs mer</a>
-      <div class="flex-child two">
-        <img src="./images/honey.jpg" alt="honung"/>
-        <h2>Detta är en rubrik</h2>
-        <p>Detta är en text</p></div>
-        <a href="#">Läs mer</a>
-      <div class="flex-child three">
-        <img src="./images/biking.jpg" alt="cykla"/>
-        <h2>Detta är en rubrik</h2>
-        <p>Detta är en text</p>
-        <a href="#">Läs mer</a>
+        <button class="styled-button">Läs mer</button>
     </div>
     </section>
-    <section>
-      <p>Fler nyheter</p>
-      <button>Läs mer</button>
-      </section>
-      <!-- The other news  -->
-    <footer>X</footer>
+      <!-- Footer  -->
+    <footer>
+      <div class="copyright">
+        <span>© Created by Julia. Technigo 2025</span>
+        </div></footer>
   </body>
 </html>
