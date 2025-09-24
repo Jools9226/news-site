@@ -11,6 +11,23 @@ body, html {
 
 }
 
+/*Media Queries*/
+@media(min-width: 320px) {
+  background: white; /*Vit bakgrund för mobile*/
+}
+
+@media(min-width: 768px) {
+  background: green; /*Grön bakgrund för tablet*/
+}
+
+@media(min-width: 923px) {
+  background: orange; /*Orange bakgrund för desktop*/
+}
+
+@media(min-width: 1600px) {
+  background: green; /*Grön bakgrund för huge desktop*/
+}
+
 
 header {
   background: #588f27;
@@ -264,5 +281,7 @@ footer {
   gap: 1rem;
   
 }
+
+
 
 
